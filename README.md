@@ -1,5 +1,5 @@
-# Pytorch RBF Layer - Radial Basis Function Layer
-Pytorch RBF Layer implements a radial basis function layer in Pytorch.
+# R-torch RBF Layer - Radial Basis Function Layer
+A fork from [PyTorchRBFLayer](https://github.com/rssalessio/PytorchRBFLayer) — R torch implementation of RBF Layers.
 
 Radial Basis networks can be used to approximate functions, and can be combined together with other PyTorch layers.
 
