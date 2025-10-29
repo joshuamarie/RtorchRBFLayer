@@ -19,7 +19,7 @@ knitr::opts_chunk$set(
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 <!-- badges: end -->
 
-An R torch implementation of Radial Basis Function (RBF) Layers. This project is a port of [PyTorchRBFLayer](https://github.com/rssalessio/PytorchRBFLayer) adapted for the R ecosystem.
+An R torch implementation of Radial Basis Function (RBF) Layers. This is a fork from [PyTorchRBFLayer](https://github.com/rssalessio/PytorchRBFLayer) By Alessio Russo. 
 
 Radial Basis Function (RBF) networks can be used to approximate nonlinear functions and can be combined with other R torch layers to build hybrid neural architectures.
 
@@ -218,8 +218,8 @@ The following radial basis functions are implemented:
 
 ## License
 
-This project is distributed under the MIT License. See the `LICENSE` file for details.
+This project is distributed under the MIT License. See the [LICENSE](https://github.com/joshuamarie/RtorchRBFLayer/blob/main/LICENSE)  file for details.
 
 ## Original Author
 
-Original Python Implementation: [Alessio Russo](https://github.com/rssalessio) (KTH, Sweden)
+Original Python Implementation: By [Alessio Russo](https://github.com/rssalessio) (KTH, Sweden)

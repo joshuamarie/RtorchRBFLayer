@@ -9,10 +9,10 @@
 MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 <!-- badges: end -->
 
-An R torch implementation of Radial Basis Function (RBF) Layers. This
-project is a port of
-[PyTorchRBFLayer](https://github.com/rssalessio/PytorchRBFLayer) adapted
-for the R ecosystem.
+An R torch implementation of Radial Basis Function (RBF) Layers. This is
+a fork from
+[PyTorchRBFLayer](https://github.com/rssalessio/PytorchRBFLayer) By
+Alessio Russo.
 
 Radial Basis Function (RBF) networks can be used to approximate
 nonlinear functions and can be combined with other R torch layers to
@@ -163,11 +163,11 @@ for (epoch in 1:num_epochs) {
         cat(sprintf("Epoch %d, Loss: %.4f\n", epoch, total_loss / batches))
     }
 }
-#> Epoch 10, Loss: 1.0991
-#> Epoch 20, Loss: 1.0185
-#> Epoch 30, Loss: 1.0041
-#> Epoch 40, Loss: 1.0230
-#> Epoch 50, Loss: 0.9698
+#> Epoch 10, Loss: 1.0764
+#> Epoch 20, Loss: 1.0301
+#> Epoch 30, Loss: 1.0190
+#> Epoch 40, Loss: 1.0235
+#> Epoch 50, Loss: 0.9521
 ```
 
 ### Model Evaluation
@@ -202,32 +202,32 @@ cm
 #> 
 #>           Reference
 #> Prediction  1  2  3
-#>          1 18 10 14
-#>          2  4 14  5
-#>          3 11  7 17
+#>          1 13  6  5
+#>          2  6  8  4
+#>          3 18 13 27
 #> 
 #> Overall Statistics
 #>                                          
-#>                Accuracy : 0.49           
-#>                  95% CI : (0.3886, 0.592)
-#>     No Information Rate : 0.36           
-#>     P-Value [Acc > NIR] : 0.005196       
+#>                Accuracy : 0.48           
+#>                  95% CI : (0.379, 0.5822)
+#>     No Information Rate : 0.37           
+#>     P-Value [Acc > NIR] : 0.015812       
 #>                                          
-#>                   Kappa : 0.232          
+#>                   Kappa : 0.2046         
 #>                                          
-#>  Mcnemar's Test P-Value : 0.352577       
+#>  Mcnemar's Test P-Value : 0.007007       
 #> 
 #> Statistics by Class:
 #> 
 #>                      Class: 1 Class: 2 Class: 3
-#> Sensitivity            0.5455   0.4516   0.4722
-#> Specificity            0.6418   0.8696   0.7188
-#> Pos Pred Value         0.4286   0.6087   0.4857
-#> Neg Pred Value         0.7414   0.7792   0.7077
-#> Prevalence             0.3300   0.3100   0.3600
-#> Detection Rate         0.1800   0.1400   0.1700
-#> Detection Prevalence   0.4200   0.2300   0.3500
-#> Balanced Accuracy      0.5936   0.6606   0.5955
+#> Sensitivity            0.3514   0.2963   0.7500
+#> Specificity            0.8254   0.8630   0.5156
+#> Pos Pred Value         0.5417   0.4444   0.4655
+#> Neg Pred Value         0.6842   0.7683   0.7857
+#> Prevalence             0.3700   0.2700   0.3600
+#> Detection Rate         0.1300   0.0800   0.2700
+#> Detection Prevalence   0.2400   0.1800   0.5800
+#> Balanced Accuracy      0.5884   0.5797   0.6328
 ```
 
 ## Available Basis Functions
@@ -259,10 +259,11 @@ The following radial basis functions are implemented:
 
 ## License
 
-This project is distributed under the MIT License. See the `LICENSE`
+This project is distributed under the MIT License. See the
+[LICENSE](https://github.com/joshuamarie/RtorchRBFLayer/blob/main/LICENSE)
 file for details.
 
 ## Original Author
 
-Original Python Implementation: [Alessio
+Original Python Implementation: By [Alessio
 Russo](https://github.com/rssalessio) (KTH, Sweden)
